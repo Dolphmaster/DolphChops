@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="styles.css?v=1.1">
+</head>
+<body class="bg-orange-400 flex justify-center items-center min-h-screen">
+     <div class="bg-white flex justify-center w-[30vw] rounded-lg shadow-lg p-10">
+        <div>
+        <form class="space-y-4">
+            <div>
+                <label>Email</label>
+                <input type="text" placeholder="abcde123@exmaple.com" class="w-full placeholder:opacity-[50%] placeholder:p-1 p-1 border-orange-300 border-1 rounded-sm focus:border-orange-400 focus:border-2 outline-none transition-all duration-200">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="text" class="w-full border-orange-300 border-1 p-1 rounded-sm focus:border-orange-400 focus:border-2 outline-none transition-all duration-200">
+                 <a href="" class="font-semibold text-amber-500 pt-2 pl-2 block">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Log in" class="bg-amber-500 w-full mt-3 p-2 rounded-sm hover:scale-105 cursor-pointer hover:shadow-lg text-white">
+            <p class="pt-0">Don't have an account? <a href="./signup.html" class="text-amber-500 font-semibold" target="_blank">Sign up</a></p>
+            <div class="flex items-center gap-3">
+                <hr class="flex-1 border-gray-300">
+                <span class="whitespace-nowrap text-sm">OR</span>
+                <hr class="flex-1 border-gray-300">
+            </div>
+            <div class="flex items-center w-full border-1 border-gray-400 rounded-sm justify-center gap-4 p-2 hover:scale-102 cursor-pointer">
+                <img src="./images/Google__G__logo.svg.png" alt="Google logo" class="w-5 h-5">
+                <p class="font-semibold">Continue with Google</p>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
