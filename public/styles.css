@@ -15,12 +15,15 @@
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-zinc-900: oklch(21% 0.006 285.885);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
@@ -532,8 +535,14 @@
   .bg-amber-500 {
     background-color: var(--color-amber-500);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-cyan-600 {
     background-color: var(--color-cyan-600);
+  }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
   }
   .bg-orange-300 {
     background-color: var(--color-orange-300);
@@ -558,6 +567,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
     }
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-zinc-500 {
     background-color: var(--color-zinc-500);
@@ -588,6 +600,9 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
